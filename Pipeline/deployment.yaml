@@ -1,0 +1,6 @@
+﻿- name: Deploy to AWS CloudFormation
+  uses: aws-actions/aws-cloudformation-github-deploy@v1.0.3
+  with:
+    name: Infrastructure Setup
+    template: ..\cloudFormation.yaml
+#    parameter-overrides: "MyParam1=myValue,MyParam2=${{ secrets.MY_SECRET_VALUE }}"
